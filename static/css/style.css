@@ -1,0 +1,49 @@
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+li{
+    padding: 15px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card{
+    margin: 15px;
+    min-width: 280px;
+    width: fit-content;
+}
+
+
+h1.card-title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 985px) {
+    .container{
+        gap: 15px;
+    }
+    .card{
+        width: fit-content;
+    }
+    .card-body{
+        width: fit-content;
+    }
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
